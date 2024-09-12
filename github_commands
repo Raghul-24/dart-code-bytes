@@ -1,0 +1,45 @@
+Git Hub Most commonly used commands.
+
+sudo apt update        
+sudo apt install git      		                          - To Install Git in you machine.
+git --version              		                          - To Make sure git installed or not with its version.
+ssh-keygen -t ed25519 -C "your_email@example.com"                 - To generate SSH key.
+eval "$(ssh-agent -s)"                                            - To know SSH PID Agent pid 59566 and Add.
+ssh-add ~/.ssh/id_ed25519                                         - To add your SSH key into Agent.
+git init                   		                          - To initialize git into local file folder.
+git add .                  		                          - To stash all the change made.
+git add <filename>        		                          - To stash the specific file.
+git commit -m ""           		                          - To give a message for the file were you made within "".
+git remote add origin repo_url>                                   - To add remote repo origin.
+git remote set-url                                                - To set repo url. 
+git remote -v                                                     - To check existing remote repo.
+git push                  		                          - To push our committed change code from local to remote.
+git pull                  		                          - To pull our remote code only into local file base.
+git fetch                 		                          - To get changed and unchanged code from remote to local.
+git checkout -b           		                          - To create a new branch in local.
+git branch                		                          - To check current branch now we are in.
+git push origin --delete <filename>                               - To delete the branch in Remote.
+git branch -d <filename>                                          - To delete a branch in local.
+git branch -m <new-branch-name>                                   - To rename old branch name to new one.
+git commit --amend                                                - To Change the latest commit message. 
+git stash                                                         - To record the current working change at the same time our working directory get cleaned.
+git stash apply                                                   - To reterive the record into current working directory.
+git reset --hard HEAD^                                            - To remove the last commit from git.
+git reset --hard HEAD~2                                           - To remove the last two commits and Increase the count how many you want to reset.
+git rebase                                                        - To Moving the changes from one branch onto another branch.
+git rebase <branchname>                                           - To Moving the changes from one branch onto specified branch.
+git merge                                                         - To combining changes from one branch into another branch 
+git log                                                           - To List committed history.
+git config                                                        - To know thw configuration on a global or local.
+git config --global user.name "<username.domainname>"             - To know  the name which user were using the current file on a global.
+git config --local user.name  "<username.domainname>"             - To know the name which user were usign the current file on a local.
+git config --global user.email "<username@domainname.com>"        - To know the email which user were usign the current file on a global.
+git config --local user.email "<username@domainname.com>"         - To know the email which user were usign the current file on a local.
+git config user.name                                              - To know which user were usign the current file.
+git config --global user.name         	      		          - To know  the name which user were using the current file on a global.
+git config --local user.name             			  - To know the name which user were usign the current file on a local.
+git config --global user.email          			  - To know the email which user were usign the current file on a global.
+git config --local user.email            			  - To know the email which user were usign the current file on a local.
+git cherry-pick                                                   - To takes changes from a target commit and places them on the HEAD of the currently checked out branch.
+
+
