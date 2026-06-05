@@ -43,8 +43,8 @@ void main() {
   print('After dequeue: $queue');
 
   //5. Two sum
-  final twoSumNumbers = [1,0,21,12,34,3,2,4];
-  final twoSumTarget = 14;
+  final twoSumNumbers = [2,0,21,12,34,3,2,6];
+  final twoSumTarget = 8;
   final twoSumResult = twoSum(twoSumNumbers, twoSumTarget);
   print('\n[5] Two Sum');
   print('List: $twoSumNumbers, Target: $twoSumTarget');
@@ -141,6 +141,14 @@ void main() {
   print('\n[17] Best Time to Buy and Sell Stock');
   print('Prices: $stockPrices');
   print('Max Profit: $profit');
+
+  //18. Binary Search
+  final sortedForSearch = [10, 20, 30, 40, 50];
+  final binaryTarget = 30;
+  final binaryIndex = binarySearch(sortedForSearch, binaryTarget);
+  print('\n[18] Binary Search');
+  print('Sorted List: $sortedForSearch, Target: $binaryTarget');
+  print('Found at index: $binaryIndex');
 
 }
 

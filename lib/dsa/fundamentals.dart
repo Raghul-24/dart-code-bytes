@@ -341,3 +341,24 @@ int maxProfit(List<int> prices) {
   }
   return maxProfit;
 }
+
+/// Binary search finds the position of a target value within a sorted list.
+///
+/// Time Complexity: O(log n)
+/// Space Complexity: O(1)
+int binarySearch(List<int> list, int target) {
+  int low = 0;
+  int high = list.length - 1;
+
+  while (low <= high) {
+    int mid = low + (high - low) ~/ 2;
+    if (list[mid] == target) {
+      return mid;
+    } else if (list[mid] < target) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+  return -1;
+}
